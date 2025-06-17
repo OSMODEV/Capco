@@ -1,23 +1,23 @@
 # Capco
 Projet de démo
 
-D'abord j'utilise spring initializr pour générer un projet maven, java 21
+D'abord j'utilise spring initializr pour générer un projet maven, java 21.<br>
 Je crée une architecture hexagonal générique
 
-j'ajouter un Controller rest basique juste pour pouvoir démarrer le serveur
+J'ajoute un Controller rest basique juste pour pouvoir démarrer le serveur.
 
-mvn clean install
+mvn clean install <br>
 mvn test
 
 sont fonctionnels
 
-ensuite
-panier-client$ mvn spring-boot:run
+ensuite<br>
+panier-client$ mvn spring-boot:run<br>
 en ligne de commande démarre le serveur à http://localhost:8080/calcul-panier
 
 push sur git
 
-ensuite je crée les classes domain, susceptibles de varier ensuite mais donnent une base de travail de départ.
+Ensuite je crée les classes domain, susceptibles de varier ensuite mais donnent une base de travail de départ.
 Par défaut, je les crée en immutables.
 
 Etape suivante je crée le useCase, son implementation et son test qui échoue puisque je n'ai pas codé la logic métier.
@@ -30,8 +30,8 @@ de récupération des prix sans impacter le métier.
 
 l'appel au controleur affiche "Le client M. Dupont a un panier d'une valeur de 2700"
 
-pour cela il suffit de taper les commande
-mvn clean install
+pour cela il suffit de taper les commande<br>
+mvn clean install<br>
 mvn spring-boot:run
 
 
