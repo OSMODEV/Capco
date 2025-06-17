@@ -20,4 +20,6 @@ push sur git
 ensuite je crée les classes domain, susceptibles de varier ensuite mais donnent une base de travail de départ.
 Par défaut, je les crée en immutables.
 
-Etape suivante je crée le useCase, son implementation et son test qui échoue puisque je n'ai pas codé la logic métier
+Etape suivante je crée le useCase, son implementation et son test qui échoue puisque je n'ai pas codé la logic métier.
+
+Maintenant on crée une version basique qui fonctionne avec le test.
