@@ -23,3 +23,17 @@ Par défaut, je les crée en immutables.
 Etape suivante je crée le useCase, son implementation et son test qui échoue puisque je n'ai pas codé la logic métier.
 
 Maintenant on crée une version basique qui fonctionne avec le test.
+
+A présent on ajoute une factory pour créer la bonne instance de TarificationPort, ainsi non seulement on n'a pas 
+de connaitre le tarificateur dans le métier et en plus on pourra facilement modifier l'implementation 
+de récupération des prix sans impacter le métier.
+
+l'appel au controleur affiche "Le client M. Dupont a un panier d'une valeur de 2700"
+
+pour cela il suffit de taper les commande
+mvn clean install
+mvn spring-boot:run
+
+
+Les tests sont en place pour controler qu'on a des résultats attendus pour particulier, pro avec CA > 10 000 000
+et pro avec CA inférieur
